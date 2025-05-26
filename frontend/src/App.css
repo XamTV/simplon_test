@@ -1,6 +1,57 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background: linear-gradient(145deg, #fff176, #ffca28);
+  color: #4e342e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+#LandingPageContainer {
+  background-color: #fff59d;
+  border: 4px dashed #ff6f00;
+  border-radius: 20px;
+  padding: 30px;
+  width: 35vw;
+  height: 20vh;
   text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px; /* espace entre la blague et le bouton */
+  animation: popIn 0.4s ease-out;
+  position: relative;
+}
+
+#LandingPageContainer h1 {
+  font-size: 1.8rem;
+  color: #d84315;
+  margin-bottom: 15px;
+}
+
+#LandingPageContainer p {
+  font-size: 1.2rem;
+  color: #5d4037;
+}
+
+#ButtonContainer {
+  margin-bottom: 20px;
+}
+
+#ButtonContainer button {
+  background-color: #ff6f00;
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+#ButtonContainer button:hover {
+  background-color: #f57c00;
 }

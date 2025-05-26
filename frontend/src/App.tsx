@@ -21,7 +21,9 @@ function App() {
   return (
     <>
       <Button displayJoke={displayJoke} joke={joke?.title ?? ""} />
-      <LandingPage title={joke?.title ?? ""} answer={joke?.answer ?? ""} />
+      {joke && (
+        <LandingPage title={joke?.title ?? ""} answer={joke?.answer ?? ""} />
+      )}
     </>
   );
 }
